@@ -1,0 +1,144 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "itmar/design-checkbox",
+  "version": "1.0.0",
+  "title": "Design CheckBox",
+  "category": "design",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "inputName": {
+      "type": "string",
+      "default": "default_name"
+    },
+    "inputValue": {
+      "type": "boolean",
+      "default": false
+    },
+    "proceedCheck": {
+      "type": "boolean",
+      "default": false
+    },
+    "align": {
+      "type": "string",
+      "default": "left"
+    },
+    "bgColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--content-back)"
+    },
+    "labelContent": {
+      "type": "string"
+    },
+    "font_style_label": {
+      "type": "object",
+      "default": {
+        "default_fontSize": "16px",
+        "mobile_fontSize": "12px",
+        "fontFamily": "Noto Sans JP, sans-serif",
+        "fontWeight": "500",
+        "isItalic": false
+      }
+    },
+    "labelColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--content)"
+    },
+    "default_pos": {
+      "type": "object",
+      "default": {
+        "margin_value": {
+          "top": "10px",
+          "left": "10px",
+          "bottom": "10px",
+          "right": "10px"
+        },
+        "padding_value": {
+          "top": "10px",
+          "left": "10px",
+          "bottom": "10px",
+          "right": "10px"
+        }
+      }
+    },
+    "mobile_pos": {
+      "type": "object",
+      "default": {
+        "margin_value": {
+          "top": "10px",
+          "left": "0",
+          "bottom": "10px",
+          "right": "0"
+        },
+        "padding_value": {
+          "top": "10px",
+          "left": "0",
+          "bottom": "10px",
+          "right": "0"
+        }
+      }
+    },
+    "bgColor_form": {
+      "type": "string"
+    },
+    "boxColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--accent-1)"
+    },
+    "boxBgColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--accent-1)"
+    },
+    "radius_heading": {
+      "type": "object",
+      "default": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px",
+        "value": "0px"
+      }
+    },
+    "border_heading": {
+      "type": "object"
+    },
+    "shadow_element": {
+      "type": "object",
+      "default": {
+        "shadowType": "nomal",
+        "spread": 2,
+        "lateral": 2,
+        "longitude": 2,
+        "nomalBlur": 3,
+        "shadowColor": "#9F9F9F",
+        "distance": 5,
+        "intensity": 5,
+        "opacity": 0.5,
+        "depth": 5,
+        "blur": 5,
+        "bdBlur": 5,
+        "expand": 5,
+        "glassblur": 5,
+        "glassopa": 0.5,
+        "newDirection": "top_left",
+        "clayDirection": "top",
+        "embos": "swell",
+        "hasOutline": true,
+        "baseColor": "#ffffff"
+      }
+    },
+    "shadow_result": {
+      "type": "object"
+    },
+    "is_shadow": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "block-collections",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

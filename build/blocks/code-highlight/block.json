@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "itmar/code-highlight",
+  "version": "1.0.0",
+  "title": "Code HighLight",
+  "category": "widgets",
+  "icon": "embed-generic",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "codeArea": {
+      "type": "string",
+      "default": ""
+    },
+    "linenums": {
+      "type": "boolean",
+      "default": true
+    },
+    "linenumsStart": {
+      "type": "number",
+      "default": 1
+    },
+    "lang": {
+      "type": "string",
+      "default": ""
+    },
+    "skin": {
+      "type": "string",
+      "default": "desert"
+    },
+    "fileName": {
+      "type": "string",
+      "default": ""
+    },
+    "isEditMode": {
+      "type": "boolean",
+      "default": false
+    },
+    "margin_value": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "left": "10px",
+        "bottom": "10px",
+        "right": "10px"
+      }
+    },
+    "padding_value": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "left": "10px",
+        "bottom": "10px",
+        "right": "10px"
+      }
+    }
+  },
+  "textdomain": "block-collections",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

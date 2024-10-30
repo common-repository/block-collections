@@ -1,0 +1,205 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "itmar/design-table",
+  "version": "0.1.0",
+  "title": "Design Table",
+  "category": "design",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "dataSource": {
+      "type": "string",
+      "default": ""
+    },
+    "tableSource": {
+      "type": "array",
+      "default": []
+    },
+    "is_heading": {
+      "type": "boolean",
+      "default": false
+    },
+    "tableHeading": {
+      "type": "array",
+      "default": []
+    },
+    "bgColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--content-back)"
+    },
+    "font_style_th": {
+      "type": "object",
+      "default": {
+        "default_fontSize": "16px",
+        "mobile_fontSize": "12px",
+        "fontFamily": "Noto Sans JP, sans-serif",
+        "fontWeight": "500",
+        "isItalic": false
+      }
+    },
+    "font_style_td": {
+      "type": "object",
+      "default": {
+        "default_fontSize": "16px",
+        "mobile_fontSize": "12px",
+        "fontFamily": "Noto Sans JP, sans-serif",
+        "fontWeight": "500",
+        "isItalic": false
+      }
+    },
+    "th_color": {
+      "type": "string",
+      "default": "var(--wp--preset--color--content)"
+    },
+    "bgColor_th": {
+      "type": "string",
+      "default": "var(--wp--preset--color--background)"
+    },
+    "bgGradient_th": {
+      "type": "string"
+    },
+    "td_color": {
+      "type": "string",
+      "default": "var(--wp--preset--color--content)"
+    },
+    "bgColor_td": {
+      "type": "string",
+      "default": "var(--wp--preset--color--background)"
+    },
+    "bgGradient_td": {
+      "type": "string"
+    },
+    "radius_value": {
+      "type": "object",
+      "default": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px",
+        "value": "0px"
+      }
+    },
+    "border_value": {
+      "type": "object",
+      "default": {
+        "width": "1px",
+        "style": "solid",
+        "color": "var(--wp--preset--color--content)"
+      }
+    },
+    "default_pos": {
+      "type": "object",
+      "default": {
+        "margin_value": {
+          "top": "0",
+          "left": "0",
+          "bottom": "0",
+          "right": "0"
+        },
+        "padding_value": {
+          "top": "0.5em",
+          "left": "1em",
+          "bottom": "0.5em",
+          "right": "1em"
+        },
+        "padding_th": {
+          "top": "10px",
+          "left": "20px",
+          "bottom": "10px",
+          "right": "20px"
+        },
+        "padding_td": {
+          "top": "10px",
+          "left": "20px",
+          "bottom": "10px",
+          "right": "20px"
+        },
+        "headding_min_width": 120
+      }
+    },
+    "mobile_pos": {
+      "type": "object",
+      "default": {
+        "margin_value": {
+          "top": "10px",
+          "left": "0",
+          "bottom": "10px",
+          "right": "0"
+        },
+        "padding_value": {
+          "top": "10px",
+          "left": "0",
+          "bottom": "10px",
+          "right": "0"
+        },
+        "padding_th": {
+          "top": "5px",
+          "left": "5px",
+          "bottom": "5px",
+          "right": "5px"
+        },
+        "padding_td": {
+          "top": "5px",
+          "left": "5px",
+          "bottom": "5px",
+          "right": "5px"
+        },
+        "headding_min_width": 80
+      }
+    },
+    "columWidth": {
+      "type": "array",
+      "default": []
+    },
+    "columAlign": {
+      "type": "array",
+      "default": []
+    },
+    "columAlignTH": {
+      "type": "string",
+      "default": "center"
+    },
+    "intensity": {
+      "type": "integer",
+      "default": 10
+    },
+    "shadow_element": {
+      "type": "object",
+      "default": {
+        "shadowType": "nomal",
+        "spread": 2,
+        "lateral": 2,
+        "longitude": 2,
+        "nomalBlur": 3,
+        "shadowColor": "#9F9F9F",
+        "distance": 5,
+        "intensity": 5,
+        "opacity": 0.5,
+        "depth": 5,
+        "blur": 5,
+        "bdBlur": 5,
+        "expand": 5,
+        "glassblur": 5,
+        "glassopa": 0.5,
+        "newDirection": "top_left",
+        "clayDirection": "top",
+        "embos": "swell",
+        "hasOutline": true,
+        "baseColor": "#ffffff"
+      }
+    },
+    "shadow_result": {
+      "type": "object"
+    },
+    "is_shadow": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "block-collections",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,169 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "itmar/design-title",
+  "version": "1.0.0",
+  "title": "Design Title",
+  "category": "design",
+  "icon": "tag",
+  "supports": {
+    "html": false,
+    "color": {},
+    "typography": {
+      "fontSize": false,
+      "lineHeight": true,
+      "textColumns": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  },
+  "example": {},
+  "attributes": {
+    "headingContent": {
+      "type": "string"
+    },
+    "headingType": {
+      "type": "string",
+      "default": "H2"
+    },
+    "defaultHeadingSize": {
+      "type": "string",
+      "default": "16px"
+    },
+    "mobileHeadingSize": {
+      "type": "string",
+      "default": "16px"
+    },
+    "titleType": {
+      "type": "string",
+      "default": "plaine"
+    },
+    "dateFormat": {
+      "type": "string",
+      "default": "Y.n.j"
+    },
+    "isMenuItem": {
+      "type": "boolean",
+      "default": false
+    },
+    "headingID": {
+      "type": "string"
+    },
+    "linkKind": {
+      "type": "string",
+      "default": "none"
+    },
+    "menu_pos": {
+      "type": "string",
+      "default": "bottom right"
+    },
+    "is_title_menu": {
+      "type": "boolean",
+      "default": true
+    },
+    "selectedSlug": {
+      "type": "string",
+      "default": ""
+    },
+    "align": {
+      "type": "string",
+      "default": "left"
+    },
+    "isVertical": {
+      "type": "boolean",
+      "default": false
+    },
+    "padding_heading": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "left": "10px",
+        "bottom": "10px",
+        "right": "10px"
+      }
+    },
+    "optionStyle": {
+      "type": "object"
+    },
+    "isIdle": {
+      "type": "boolean",
+      "default": false
+    },
+    "shadow_element": {
+      "type": "object",
+      "default": {
+        "shadowType": "nomal",
+        "spread": 2,
+        "lateral": 2,
+        "longitude": 2,
+        "nomalBlur": 3,
+        "shadowColor": "#9F9F9F",
+        "distance": 5,
+        "intensity": 5,
+        "opacity": 0.5,
+        "depth": 5,
+        "blur": 5,
+        "bdBlur": 5,
+        "expand": 5,
+        "glassblur": 5,
+        "glassopa": 0.5,
+        "newDirection": "top_left",
+        "clayDirection": "top",
+        "embos": "swell",
+        "hasOutline": true,
+        "baseColor": "#ffffff"
+      }
+    },
+    "shadow_result": {
+      "type": "object"
+    },
+    "is_shadow": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_underLine": {
+      "type": "boolean",
+      "default": false
+    },
+    "underLine_prop": {
+      "type": "object",
+      "default": {
+        "width": "100%",
+        "height": "3px",
+        "distance": "0.5em",
+        "is_anime": true
+      }
+    },
+    "bgColor_underLine": {
+      "type": "string"
+    },
+    "bgGradient_underLine": {
+      "type": "string"
+    }
+  },
+  "textdomain": "block-collections",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
